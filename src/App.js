@@ -6,8 +6,7 @@ import Search from './components/search';
 const App = () =>(
   <Provider store={store}>
     <main>
-      <Search/>
-      
+      <Search/> 
     </main>
   </Provider>
 )

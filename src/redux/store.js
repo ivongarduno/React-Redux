@@ -1,19 +1,14 @@
-import { createStore } from 'redux';
+import { createStore, applyMiddleware, combineReducers } from 'redux';
+import thunk from 'redux-thunk';
 
-const initialState ={
-    results:[{
-        id:1,
-        name: 'yo'
-    },
-    {
-       id:2,
-       name:'otro' 
-    }]
-}
+//importamos nuestro reducer
+import resultsReducer from './reducers/resultsReducer';
 
-//encargada de hacer los cambios
-const reducerHero = (state = initialState, action) => {
-    return state
-}
 
-export default createStore(reducerHero);
+const mainReducer = combineReducers({ results: resultsReducer});
+
+
+export default createStore(
+    mainReducer,
+    applyMiddleware(thunk)
+);
