@@ -1,6 +1,8 @@
 .ListItem {
   font-family: 'Special Elite', cursive;
   list-style: none;
-  margin: 2em; }
+  margin: 2em;
+  border: 1px solid white; }
   .ListItem img {
-    width: 20%; }
+    width: 60%;
+    margin: auto; }
