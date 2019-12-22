@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { fetchGetHero } from '../redux/reducers/resultsReducer';
+import ItemHero from './itemHero/itemHero';
 
 class Search extends Component {
 
@@ -31,6 +32,7 @@ class Search extends Component {
         
         const results = this.props.results;
         console.log(results)
+
         
         return(
             <form onSubmit={this.handleGet}>
@@ -38,13 +40,18 @@ class Search extends Component {
             <button type="submit">Buscar</button>
                 {
                 results.map((hero)=>{
+                    if(!hero){
+                        return <p>No hay resultados</p>
+                    }
+                    else{
                         return(
-                        <ul key={hero.id}>
-                        <h1>{hero.name}</h1>
-                        <img src={hero.image.url} alt={hero.name}></img>
-                        </ul>
-                        )
-                    
+                            <ul key={hero.id}>
+                                <ItemHero hero={hero}/>
+                            </ul>
+                        
+                        )  
+                    }
+                        
                 })
                 
             } 
