@@ -1,7 +1,9 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 import { connect } from 'react-redux';
-import { fetchGetHero } from '../redux/reducers/resultsReducer';
-import ItemHero from './itemHero/itemHero';
+import { fetchGetHero } from '../../redux/reducers/resultsReducer';
+import ItemHero from '../itemHero/itemHero';
+
+import './search.css';
 
 class Search extends Component {
 
@@ -35,29 +37,30 @@ class Search extends Component {
 
         
         return(
-            <form onSubmit={this.handleGet}>
-            <input name="text" placeholder="Ex: Batman" value={this.state.text} onChange={this.hanldeChange} />
-            <button type="submit">Buscar</button>
+            <Fragment>
+            <div className='container-form'>
+                <form onSubmit={this.handleGet} clasName='form-search'>
+                    <input name="text" 
+                    placeholder="Ex: Batman" 
+                    value={this.state.text} 
+                    onChange={this.hanldeChange} />
+                    <button type="submit" className='btn btn-2'>Buscar</button>  
+                </form>
+            </div>
+            <div className='container-results'>
                 {
-                results.map((hero)=>{
-                    if(!hero){
-                        return <p>No hay resultados</p>
-                    }
-                    else{
+                    results.map((hero)=>{
+                        
                         return(
                             <ul key={hero.id}>
                                 <ItemHero hero={hero}/>
                             </ul>
+                        ) 
                         
-                        )  
-                    }
-                        
-                })
-                
-            } 
-        
-            
-            </form>
+                    })   
+                } 
+            </div>
+            </Fragment>
         )
     }
     

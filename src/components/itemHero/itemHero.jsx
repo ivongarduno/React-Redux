@@ -1,4 +1,5 @@
 import React from 'react';
+import './itemHero.css';
 
 
 const ItemHero = ({ hero: { name, image, biography, work }}) => {
@@ -16,7 +17,6 @@ const ItemHero = ({ hero: { name, image, biography, work }}) => {
             alt=""
           />
           <div className="card-body">
-            
             <p className="card-text"><b>First Appearance:</b> {firstAppearance}</p>
             <p className="card-text"><b>Publisher:</b> {biography.publisher}</p>
             <p className="card-text"><b>Occupation:</b> {work.occupation}</p>
