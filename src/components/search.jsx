@@ -9,10 +9,11 @@ class Search extends Component {
 
         this.state = {
             text: ''
+
         }
     }
 
-
+   
     hanldeChange = (event) => {
         let name = event.target.name;
         let value = event.target.value;
@@ -23,28 +24,29 @@ class Search extends Component {
     handleGet = (event) => {
         event.preventDefault();
         this.props.fetchGetHero(this.state.text);
-        this.setState({ text: '' });
+        this.setState({ text: ''});
     }
 
     render(){
         
-            const results = this.props.results;
-            console.log(results);
-
+        const results = this.props.results;
+        console.log(results)
+        
         return(
             <form onSubmit={this.handleGet}>
-            <input name="text" placeholder="Name Here!" value={this.state.text} onChange={this.hanldeChange} />
+            <input name="text" placeholder="Ex: Batman" value={this.state.text} onChange={this.hanldeChange} />
             <button type="submit">Buscar</button>
-            
-            { 
-                
-                results.map(h=>(
+                {
+                results.map((hero)=>{
+                        return(
+                        <ul key={hero.id}>
+                        <h1>{hero.name}</h1>
+                        <img src={hero.image.url} alt={hero.name}></img>
+                        </ul>
+                        )
                     
-                    <div>
-                        <h1 key={h.id}>{h.name}</h1>
-                        <img src={h.image.url} alt={h.name}></img>
-                    </div>
-                    ))
+                })
+                
             } 
         
             

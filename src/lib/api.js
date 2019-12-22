@@ -8,10 +8,6 @@ export const apiGetHero = (name) => {
         .then(response => response.json())
         .then(recurso => {
             console.log(recurso.results)
-            if(recurso.results === undefined){
-                const error = 'fallo';
-                return error;
-            }
             return recurso.results;
         })
         // .catch(error => {
