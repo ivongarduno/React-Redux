@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "c3b04a4d635bc4134871868bf736dd80",
+    "revision": "a971def36d966e5b2868f28ec9116da3",
     "url": "/React-Redux/index.html"
   },
   {
-    "revision": "240a7dda9849f4bb8a22",
-    "url": "/React-Redux/static/css/main.8ec43f4e.chunk.css"
+    "revision": "d25bf2e94ee6a848ae6f",
+    "url": "/React-Redux/static/css/main.d87c1d64.chunk.css"
   },
   {
     "revision": "0ddb9a4b89d308d38287",
@@ -16,12 +16,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/React-Redux/static/js/2.607ea709.chunk.js.LICENSE"
   },
   {
-    "revision": "240a7dda9849f4bb8a22",
-    "url": "/React-Redux/static/js/main.0515b418.chunk.js"
+    "revision": "d25bf2e94ee6a848ae6f",
+    "url": "/React-Redux/static/js/main.957faa4a.chunk.js"
   },
   {
     "revision": "f67b8011e6a6a192d835",
     "url": "/React-Redux/static/js/runtime-main.5761b9b7.js"
+  },
+  {
+    "revision": "3863a64a656a3fa8c6775627261bae3e",
+    "url": "/React-Redux/static/media/fondo.3863a64a.jpg"
   },
   {
     "revision": "de2d2131b14b6fc2ee837cb2ef512c1b",
