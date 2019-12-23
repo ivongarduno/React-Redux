@@ -27,7 +27,7 @@ $background-card: rgb(242, 190, 92);
     height: 80%;
 }
   
-.card_adelante{
+.card_front{
     width: 100%;
     height: 100%;
     position: absolute;
@@ -38,7 +38,7 @@ $background-card: rgb(242, 190, 92);
     background: $background-card;
 }
 
-.card_atras{
+.card_back{
     width: 100%;
     height: 100%;
     position: absolute;
