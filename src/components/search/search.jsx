@@ -15,8 +15,7 @@ class Search extends Component {
 
         }
     }
-
-   
+  
     hanldeChange = (event) => {
         let name = event.target.name;
         let value = event.target.value;
@@ -39,25 +38,18 @@ class Search extends Component {
         return(
             <Fragment>
             <div className='container-form'>
-                <form onSubmit={this.handleGet} clasName='form-search'>
-                    <input name="text" 
-                    placeholder="Ex: Batman" 
+                <img src='../../img/dc-logo.jpg' alt='' />
+                <form onSubmit={this.handleGet} className='form-search'>
+                    <input name='text' 
+                    placeholder='Ex: Batman' 
                     value={this.state.text} 
                     onChange={this.hanldeChange} />
-                    <button type="submit" className='btn btn-2'>Buscar</button>  
+                    <button type='submit' className='btn btn-2'>Buscar</button>  
                 </form>
             </div>
             <div className='container-results'>
                 {
-                    results.map((hero)=>{
-                        
-                        return(
-                            <ul key={hero.id}>
-                                <ItemHero hero={hero}/>
-                            </ul>
-                        ) 
-                        
-                    })   
+                    results.map( hero => { return <ItemHero hero={hero}/> })   
                 } 
             </div>
             </Fragment>

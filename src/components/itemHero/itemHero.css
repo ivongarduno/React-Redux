@@ -1,8 +1,46 @@
-.ListItem {
-  font-family: 'Special Elite', cursive;
-  list-style: none;
-  margin: 2em;
-  border: 1px solid white; }
-  .ListItem img {
-    width: 60%;
-    margin: auto; }
+.card-wrap {
+  width: 20%;
+  height: 80vh;
+  -webkit-perspective: 850;
+  perspective: 850;
+  margin: 20px; }
+
+.card {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: .7s ease; }
+
+.card-wrap:hover .card {
+  transform: rotateY(180deg); }
+
+.card_img {
+  width: 100%;
+  height: 80%; }
+
+.card_adelante {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border: none;
+  box-shadow: 5px 5px 2px 1px rgba(0, 0, 0, 0.2);
+  background: #f2be5c; }
+
+.card_atras {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  transform: rotateY(180deg);
+  background: #f2be5c; }
+
+.card_title {
+  margin: 10px;
+  color: #bf2604; }
+
+.card_text {
+  margin: 10px; }

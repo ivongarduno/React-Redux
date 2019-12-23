@@ -41,6 +41,12 @@
         font-family: 'Special Elite', cursive;
         font-size: 16px;
       }
+
+    img{
+      position: absolute;
+      top:0;
+      left:0;
+    }
 }
 
 .btn-2 {
@@ -81,12 +87,10 @@
 
 .container-results{
   width: 100%;
-  padding: 8em 0;
+  background-color: rgba(39, 37, 37, 0.8);
+  padding-top: 7em;
   display: flex;
-  flex-direction: row;
-
-    ul{
-      width: 100%;
-      border:1px solid white;
-    }
+  flex-wrap: wrap;
+  position:absolute;
+  z-index:-1;
 }
