@@ -1,9 +1,12 @@
 .card-wrap {
   width: 20%;
-  height: 80vh;
+  height: 70vh;
   -webkit-perspective: 850;
   perspective: 850;
-  margin: 20px; }
+  margin: 25px 20px; }
+  @media (max-width: 414px) {
+    .card-wrap {
+      width: 90%; } }
 
 .card {
   width: 100%;

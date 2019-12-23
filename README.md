@@ -39,7 +39,7 @@ Este proyecto fue desarrollado con ReactJS, Redux para almacenar el estado y el 
 
 ### Árbol :deciduous_tree:
 
-La estructura de las carpetas se ve así, y la decisión de organizarlas de esta manera fue para obtener un codigo más organizado y fácil de leer. Cada carpeta en components contiene un componente de React y su archivo de estilos independiente. En la carpeta lib podrás encontrar el archivo donde se ejecuta el consumo de la API. En la carpeta redux podrás encontrar el store y los reducers necesarios para el funcionamiento de la aplicación con esta librería y el archivo index.js es el punto de entrada.
+La estructura de las carpetas se ve así, el objetivo es obtener un código mejor organizado y fácil de leer. Cada carpeta en components contiene un componente de React y su archivo de estilos independiente. En la carpeta lib podrás encontrar el archivo donde se ejecuta el consumo de la API. En la carpeta redux podrás encontrar el store y los reducers necesarios para el funcionamiento de la aplicación con esta librería y el archivo index.js es el punto de entrada.
 
 ![](src/img/arbol.png)
 

@@ -10,14 +10,18 @@
   justify-content: center;
   align-items: center;
   box-shadow: 0 4px 10px -6px #222;
-  font-family: 'Special Elite', cursive; }
+  font-family: "Special Elite", cursive; }
   .container-form input {
+    width: 50%;
     height: 3rem;
     border-radius: 0.5rem;
     border: 1px solid white;
     padding: 10px;
     margin: 10px;
-    background: rgba(0, 0, 0, 0.3); }
+    background: rgba(0, 0, 0, 0.3);
+    color: white;
+    font-family: 'Special Elite', cursive;
+    font-size: 1.5em; }
   .container-form button {
     color: white;
     border: none;
@@ -74,6 +78,7 @@
   width: 100%;
   background-color: rgba(39, 37, 37, 0.8);
   padding-top: 7em;
+  padding-left: 2rem;
   display: flex;
   flex-wrap: wrap;
   position: absolute;

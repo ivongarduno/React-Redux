@@ -49,7 +49,7 @@ class Search extends Component {
             </div>
             <div className='container-results'>
                 {
-                    results.map( hero => { return <ItemHero hero={hero}/> })   
+                    results.map( hero => { return <ItemHero hero={hero} key={hero.id}/> })   
                 } 
             </div>
             </Fragment>
