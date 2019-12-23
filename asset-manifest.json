@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/React-Redux/static/css/main.053ccf56.chunk.css",
+    "main.css": "/React-Redux/static/css/main.3792e376.chunk.css",
     "main.js": "/React-Redux/static/js/main.372a840d.chunk.js",
     "main.js.map": "/React-Redux/static/js/main.372a840d.chunk.js.map",
     "runtime-main.js": "/React-Redux/static/js/runtime-main.5761b9b7.js",
@@ -8,9 +8,9 @@
     "static/js/2.607ea709.chunk.js": "/React-Redux/static/js/2.607ea709.chunk.js",
     "static/js/2.607ea709.chunk.js.map": "/React-Redux/static/js/2.607ea709.chunk.js.map",
     "index.html": "/React-Redux/index.html",
-    "precache-manifest.fa250ccaf48d5b1d177c413d0b52abc7.js": "/React-Redux/precache-manifest.fa250ccaf48d5b1d177c413d0b52abc7.js",
+    "precache-manifest.f1148e4d6a5588cef86d428185e9cc63.js": "/React-Redux/precache-manifest.f1148e4d6a5588cef86d428185e9cc63.js",
     "service-worker.js": "/React-Redux/service-worker.js",
-    "static/css/main.053ccf56.chunk.css.map": "/React-Redux/static/css/main.053ccf56.chunk.css.map",
+    "static/css/main.3792e376.chunk.css.map": "/React-Redux/static/css/main.3792e376.chunk.css.map",
     "static/js/2.607ea709.chunk.js.LICENSE": "/React-Redux/static/js/2.607ea709.chunk.js.LICENSE",
     "static/media/style.css": "/React-Redux/static/media/fondo.3863a64a.jpg",
     "static/media/search.css": "/React-Redux/static/media/trueno.de2d2131.jpg"
@@ -18,7 +18,7 @@
   "entrypoints": [
     "static/js/runtime-main.5761b9b7.js",
     "static/js/2.607ea709.chunk.js",
-    "static/css/main.053ccf56.chunk.css",
+    "static/css/main.3792e376.chunk.css",
     "static/js/main.372a840d.chunk.js"
   ]
 }
